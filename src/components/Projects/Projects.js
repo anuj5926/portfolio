@@ -5,7 +5,8 @@ import Particle from "../Particle";
 import chatify from "../../Assets/Projects/chatify.png";
 import form from "../../Assets/Projects/form.png";
 import travel from "../../Assets/Projects/travel.jpeg";
-
+import DNS from "../../Assets/Projects/DNS.jpg";
+import Git from "../../Assets/Projects/git.jpg";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -18,6 +19,33 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+        <Col md={4} className="project-card">
+
+            <ProjectCard
+              imgPath={DNS}
+              isBlog={false}
+              title="Build My Own DNS Server"
+              description="I have developed a DNS server project that includes a custom nameserver built with Node.js, which I
+have deployed on AWS. Additionally, I have created and deployed a website that provides hosting services to users, complete with a backend infrastructure. Essentially, my project offers hosting services"
+              ghLink="https://github.com/anuj5926/buildYourOwnDNS_DnsServer"
+              demoLink="http://dns.anujpandey.xyz"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Git}
+              isBlog={false}
+              title="Build Your Own Git"
+              description="In this project, I completed a task assigned by CodeCrafter to develop a custom version control system
+similar to Git, using JavaScript and Node.js. I implemented essential Git commands, including git init
+and commit management, among others. This project offered me a comprehensive understanding of
+Git’s internal mechanics and the data management processes employed by version control systems."
+              ghLink="https://github.com/anuj5926/buildYourOwnGit"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
